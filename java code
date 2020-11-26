@@ -1,0 +1,39 @@
+Insert and retrive records
+
+import java.sql
+public class Employee
+{
+public static void main(String[] args)
+{
+Connector conn=null;
+Statement stmt=null;
+System.out.println("insert the data:");
+stmt=conn.createstatement();
+String sql="INSERT INTO emp"+
+           "VALUES('Sam',1001,'Mechanical',25000)";
+stmt.executeupdate(sql);
+ sql="INSERT INTO emp"+
+           "VALUES('Aravind',1002,'Electrical',20000)";
+stmt.executeupdate(sql);
+ sql="INSERT INTO emp"+
+           "VALUES('Jhony',1003,'Medical',35000)";
+stmt.executeupdate(sql);
+ sql="INSERT INTO emp"+
+           "VALUES('Melvin',1004,'Mechanical',24000)";
+stmt.executeupdate(sql);
+System.out.print("Data inserted");
+String sql="SELECT name,emp_id,branch,salary from emp";
+SetResult sr=stmt.executeQuery(sql);
+whilw(sr.next())
+{
+varchar name=sr.getVarchar("name");
+int emp_id=sr.getInt("emp_id");
+varchar branch=sr.getVarchar("branch");
+varchar salary=sr.getVarchar("salary");
+System.out.print("name:"+name);
+                ("emp_id:"+emp_id);
+                ("branch:"+branch);
+                ("salary:"+salary);
+                }
+        }
+}
