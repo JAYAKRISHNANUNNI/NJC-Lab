@@ -1,0 +1,17 @@
+# NJC-Lab
+Setup Database, create table,insert records
+
+CREATE DATABASE employee;
+CREATE TABLE emp(name varchar(50),emp_id int,branch varchar(50),salary varchar(20));
+INSERT INTO emp VALUES('Sam',1001,'Mechanical',25000);
+INSERT INTO emp VALUES('Aravind',1002,'Electrical',20000);
+INSERT INTO emp VALUES('Jhony',1003,'Medical',35000);
+INSERT INTO emp VALUES('Melvin',1004,'Mechanical',24000);
+
+
+
+Insert and retrive some records
+
+INSERT INTO emp VALUES('Midhun',1008,'Sales',19000);
+SELECT * FROM emp;
+SELECT * FROM emp WHERE salary<21000);
