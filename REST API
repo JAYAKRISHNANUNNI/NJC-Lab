@@ -1,0 +1,30 @@
+Public class Emp
+{
+private varchar name;
+private int emp_id;
+private varchar branch;
+private varchar salary;
+Public Emp(varchar name,int emp_id,varchar branch,varchar salary)
+    {
+      this.name=name;
+      this.emp_id=emp_id;
+      this.branch=branch;
+      this.salary=salary;
+    }
+    Public varchar getName()
+      {
+        return name;
+      }
+      Public int getemp_id()
+      { 
+      return emp_id;
+      }
+      Public varchar getBranch()
+      {
+      return branch;
+      }
+      Public varchar getSalary()
+      {
+      return salary;
+      }
+}
